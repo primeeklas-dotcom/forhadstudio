@@ -1,0 +1,2642 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+<meta name="theme-color" content="#05070f" />
+
+<!-- ===== PRIMARY SEO ===== -->
+<title>FORHAD STUDIO | Professional Website Design & Development in Bangladesh</title>
+<meta name="description" content="FORHAD STUDIO builds fast, responsive and SEO-ready websites for businesses in Bangladesh. Landing pages, business websites, e-commerce and custom web applications — clear pricing and instant ordering." />
+<meta name="robots" content="index, follow, max-image-preview:large" />
+<meta name="author" content="FORHAD STUDIO" />
+<meta name="keywords" content="website design Bangladesh, website development Bangladesh, business website, e-commerce website, landing page development, SEO friendly website, professional website design" />
+<link rel="canonical" href="https://yourdomain.com/" />
+
+<!-- ===== OPEN GRAPH ===== -->
+<meta property="og:type" content="website" />
+<meta property="og:site_name" content="FORHAD STUDIO" />
+<meta property="og:title" content="FORHAD STUDIO | Professional Website Design & Development" />
+<meta property="og:description" content="Professional website design and development in Bangladesh. Landing pages, business websites, e-commerce and custom web apps. Transparent pricing, SEO-ready structure." />
+<meta property="og:url" content="https://yourdomain.com/" />
+<meta property="og:image" content="https://yourdomain.com/og-image.jpg" />
+<meta property="og:image:alt" content="FORHAD STUDIO — Professional Website Design & Development" />
+<meta property="og:locale" content="en_US" />
+
+<!-- ===== TWITTER / X ===== -->
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content="FORHAD STUDIO | Professional Website Design & Development" />
+<meta name="twitter:description" content="Professional website design and development in Bangladesh. Transparent pricing. SEO-ready structure." />
+<meta name="twitter:image" content="https://yourdomain.com/og-image.jpg" />
+<meta name="twitter:image:alt" content="FORHAD STUDIO — Website Design & Development" />
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+<style>
+/* ============================================================
+   TOKENS
+   ============================================================ */
+:root{
+  --bg:#05070f;
+  --txt:#e9edf9;
+  --muted:#8b95ae;
+  --muted-2:#5f6a85;
+  --line:rgba(255,255,255,.09);
+  --line-2:rgba(255,255,255,.14);
+  --glass:rgba(255,255,255,.045);
+
+  --a1:#2ee6c5;
+  --a2:#3ddc84;
+  --glow:rgba(46,230,197,.35);
+  --glow-strong:rgba(46,230,197,.45);
+  --btn-text:#04140f;
+
+  --r-lg:22px;
+  --r-md:16px;
+  --r-sm:12px;
+
+  --ease:cubic-bezier(.2,.8,.25,1);
+}
+
+*,*::before,*::after{box-sizing:border-box;}
+
+html{
+  -webkit-text-size-adjust:100%;
+  scroll-behavior:smooth;
+}
+
+body{
+  margin:0;
+  min-height:100vh;
+  min-height:100dvh;
+  font-family:'Inter',ui-sans-serif,system-ui,-apple-system,'Segoe UI',Roboto,sans-serif;
+  color:var(--txt);
+  background:
+    radial-gradient(900px 620px at 12% -12%, rgba(46,230,197,.10), transparent 62%),
+    radial-gradient(820px 600px at 92% -4%, rgba(139,92,246,.13), transparent 60%),
+    radial-gradient(760px 520px at 50% 108%, rgba(79,139,255,.09), transparent 62%),
+    #05070f;
+  background-attachment:fixed;
+  -webkit-font-smoothing:antialiased;
+  -moz-osx-font-smoothing:grayscale;
+  overflow-x:hidden;
+  line-height:1.5;
+}
+
+img,svg{display:block;max-width:100%;}
+button{font-family:inherit;}
+::selection{background:rgba(139,92,246,.4);color:#fff;}
+
+*::-webkit-scrollbar{width:8px;height:8px;}
+*::-webkit-scrollbar-track{background:transparent;}
+*::-webkit-scrollbar-thumb{background:rgba(255,255,255,.12);border-radius:99px;}
+*::-webkit-scrollbar-thumb:hover{background:rgba(255,255,255,.2);}
+
+.sr-only{
+  position:absolute;
+  width:1px;height:1px;
+  padding:0;margin:-1px;
+  overflow:hidden;
+  clip:rect(0,0,0,0);
+  white-space:nowrap;
+  border:0;
+}
+
+/* ============================================================
+   LAYOUT
+   ============================================================ */
+.wrap{
+  width:100%;
+  max-width:1180px;
+  margin:0 auto;
+  padding:0 16px 40px;
+}
+
+/* ---------- HEADER ---------- */
+.top{
+  position:sticky;
+  top:0;
+  z-index:40;
+  padding:11px 16px;
+  margin:0 -16px 4px;
+  background:rgba(5,7,15,.72);
+  backdrop-filter:blur(18px) saturate(150%);
+  -webkit-backdrop-filter:blur(18px) saturate(150%);
+  border-bottom:1px solid rgba(255,255,255,.06);
+}
+.top-inner{
+  max-width:1180px;
+  margin:0 auto;
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:12px;
+}
+.brand{display:flex;align-items:center;gap:10px;min-width:0;}
+.logo{
+  width:34px;height:34px;flex:none;
+  border-radius:11px;
+  display:grid;place-items:center;
+  background:linear-gradient(140deg,rgba(46,230,197,.22),rgba(139,92,246,.28));
+  border:1px solid rgba(255,255,255,.14);
+  box-shadow:0 6px 20px -8px rgba(139,92,246,.8), inset 0 1px 0 rgba(255,255,255,.16);
+}
+.logo span{
+  width:12px;height:12px;border-radius:4px;
+  background:linear-gradient(135deg,#2ee6c5,#8b5cf6);
+  box-shadow:0 0 14px rgba(46,230,197,.9);
+  transform:rotate(45deg);
+}
+.brand-text{min-width:0;}
+.brand-name{
+  font-size:14px;font-weight:800;letter-spacing:.14em;
+  line-height:1.1;
+  background:linear-gradient(100deg,#ffffff,#b9c6e4);
+  -webkit-background-clip:text;background-clip:text;
+  -webkit-text-fill-color:transparent;
+}
+.brand-sub{
+  font-size:10px;color:var(--muted-2);
+  letter-spacing:.05em;font-weight:500;
+  white-space:nowrap;overflow:hidden;text-overflow:ellipsis;
+}
+.top-tag{
+  font-size:10px;font-weight:700;letter-spacing:.1em;
+  padding:6px 11px;border-radius:99px;
+  color:#a9b6d4;
+  background:rgba(255,255,255,.045);
+  border:1px solid rgba(255,255,255,.09);
+  white-space:nowrap;
+}
+
+/* ---------- HERO ---------- */
+.hero{
+  text-align:center;
+  padding:22px 4px 18px;
+}
+.eyebrow{
+  display:inline-flex;align-items:center;gap:7px;
+  font-size:10px;font-weight:700;letter-spacing:.16em;
+  text-transform:uppercase;
+  color:#9fb0d6;
+  padding:6px 13px;border-radius:99px;
+  background:rgba(255,255,255,.04);
+  border:1px solid rgba(255,255,255,.09);
+  margin-bottom:14px;
+}
+.eyebrow i{
+  width:6px;height:6px;border-radius:50%;
+  background:#2ee6c5;
+  box-shadow:0 0 10px #2ee6c5;
+  animation:pulse 2.4s infinite;
+}
+@keyframes pulse{
+  0%,100%{opacity:1;transform:scale(1);}
+  50%{opacity:.45;transform:scale(.8);}
+}
+h1{
+  margin:0 0 10px;
+  font-size:clamp(25px,6.8vw,40px);
+  line-height:1.14;
+  font-weight:800;
+  letter-spacing:-.025em;
+  background:linear-gradient(170deg,#ffffff 12%,#a9b8dc 92%);
+  -webkit-background-clip:text;background-clip:text;
+  -webkit-text-fill-color:transparent;
+}
+.hero p{
+  margin:0 auto;
+  max-width:500px;
+  font-size:13.5px;
+  color:var(--muted);
+  line-height:1.6;
+}
+
+/* ============================================================
+   PLAN CARDS  (compact + premium)
+   ============================================================ */
+.plans{
+  display:grid;
+  grid-template-columns:1fr;
+  gap:14px;
+  margin-top:8px;
+}
+
+.plan{
+  position:relative;
+  display:flex;
+  flex-direction:column;
+  padding:18px 18px 16px;
+  border-radius:var(--r-lg);
+  background:
+    linear-gradient(162deg,rgba(255,255,255,.08),rgba(255,255,255,.02) 55%,rgba(255,255,255,.035));
+  border:1px solid var(--line);
+  backdrop-filter:blur(16px) saturate(140%);
+  -webkit-backdrop-filter:blur(16px) saturate(140%);
+  box-shadow:
+    0 22px 50px -28px rgba(0,0,0,.95),
+    inset 0 1px 0 rgba(255,255,255,.07);
+  overflow:hidden;
+  isolation:isolate;
+  transition:transform .45s var(--ease), border-color .4s ease, box-shadow .45s ease;
+  will-change:transform;
+}
+.plan::before{
+  content:'';
+  position:absolute;
+  top:0;left:0;right:0;height:1.5px;
+  background:linear-gradient(90deg,transparent,var(--a1),var(--a2),transparent);
+  opacity:.9;
+  z-index:3;
+}
+.plan::after{
+  content:'';
+  position:absolute;
+  width:280px;height:280px;
+  top:-160px;right:-110px;
+  border-radius:50%;
+  background:radial-gradient(circle,var(--glow) 0%,transparent 68%);
+  opacity:.55;
+  filter:blur(6px);
+  pointer-events:none;
+  z-index:0;
+  transition:opacity .45s ease, transform .6s var(--ease);
+}
+
+/* animated shimmer sweep */
+.plan .shine{
+  position:absolute;
+  inset:0;
+  z-index:2;
+  pointer-events:none;
+  border-radius:inherit;
+  overflow:hidden;
+}
+.plan .shine::before{
+  content:'';
+  position:absolute;
+  top:-50%;
+  left:-70%;
+  width:60%;
+  height:200%;
+  background:linear-gradient(
+    100deg,
+    transparent 0%,
+    rgba(255,255,255,.05) 40%,
+    rgba(255,255,255,.14) 50%,
+    rgba(255,255,255,.05) 60%,
+    transparent 100%
+  );
+  transform:rotate(20deg);
+  opacity:0;
+  animation:cardShine 3s ease-in-out infinite;
+}
+
+/* তিনটা কার্ড একসাথে চকচক না করে — একটার পর একটা হবে */
+.plan:nth-child(1) .shine::before{ animation-delay:0s; }
+.plan:nth-child(2) .shine::before{ animation-delay:1s; }
+.plan:nth-child(3) .shine::before{ animation-delay:2s; }
+
+@keyframes cardShine{
+  0%   { left:-70%;  opacity:0; }
+  3%   {             opacity:1; }
+  28%  { left:120%;  opacity:1; }
+  32%  {             opacity:0; }
+  100% { left:120%;  opacity:0; }
+}
+
+/* accent variants */
+.plan[data-accent="low"]{
+  --a1:#2ee6c5; --a2:#3ddc84;
+  --glow:rgba(46,230,197,.34);
+  --glow-strong:rgba(46,230,197,.42);
+  --btn-text:#04140f;
+}
+.plan[data-accent="medium"]{
+  --a1:#4f8bff; --a2:#8b5cf6;
+  --glow:rgba(99,120,255,.34);
+  --glow-strong:rgba(99,120,255,.48);
+  --btn-text:#ffffff;
+}
+.plan[data-accent="high"]{
+  --a1:#a855f7; --a2:#e040a0;
+  --glow:rgba(196,72,190,.32);
+  --glow-strong:rgba(196,72,190,.48);
+  --btn-text:#ffffff;
+}
+
+@media (hover:hover){
+  .plan:hover{
+    transform:translateY(-6px);
+    border-color:var(--line-2);
+    box-shadow:
+      0 36px 72px -32px var(--glow-strong),
+      0 18px 40px -26px rgba(0,0,0,.95),
+      inset 0 1px 0 rgba(255,255,255,.11);
+  }
+  .plan:hover::after{opacity:.9;transform:scale(1.12);}
+}
+
+.plan-top{
+  position:relative;z-index:3;
+  display:flex;align-items:center;justify-content:space-between;
+  gap:8px;margin-bottom:12px;
+}
+.plan-name{
+  margin:0;
+  display:inline-flex;align-items:center;gap:8px;
+  font-size:10px;font-weight:800;letter-spacing:.15em;
+  text-transform:uppercase;
+  color:#c6d2ec;
+}
+.plan-name i{
+  width:7px;height:7px;border-radius:50%;
+  background:linear-gradient(135deg,var(--a1),var(--a2));
+  box-shadow:0 0 12px var(--glow-strong);
+  flex:none;
+}
+.badge{
+  font-size:8.5px;font-weight:800;letter-spacing:.11em;
+  text-transform:uppercase;
+  padding:4px 9px;
+  border-radius:99px;
+  color:#fff;
+  background:linear-gradient(120deg,var(--a1),var(--a2));
+  box-shadow:0 6px 18px -8px var(--glow-strong);
+  white-space:nowrap;
+  animation:badgeGlow 3s ease-in-out infinite;
+}
+@keyframes badgeGlow{
+  0%,100%{box-shadow:0 6px 18px -8px var(--glow-strong);}
+  50%{box-shadow:0 6px 26px -6px var(--glow-strong);}
+}
+
+.plan-price{
+  position:relative;z-index:3;
+  font-size:clamp(21px,5.6vw,25px);
+  font-weight:800;
+  letter-spacing:-.028em;
+  line-height:1.1;
+  margin-bottom:8px;
+  background:linear-gradient(120deg,#ffffff 20%,var(--a1) 130%);
+  -webkit-background-clip:text;background-clip:text;
+  -webkit-text-fill-color:transparent;
+}
+.plan-desc{
+  position:relative;z-index:3;
+  margin:0 0 14px;
+  font-size:12.5px;
+  line-height:1.55;
+  color:var(--muted);
+  min-height:38px;
+}
+
+.plan-list{
+  position:relative;z-index:3;
+  list-style:none;
+  margin:0 0 16px;
+  padding:12px 0 0;
+  border-top:1px solid rgba(255,255,255,.07);
+  display:flex;
+  flex-direction:column;
+  gap:8px;
+  flex:1;
+}
+.plan-list li{
+  display:flex;
+  align-items:flex-start;
+  gap:9px;
+  font-size:12.5px;
+  line-height:1.4;
+  color:#c3cde3;
+}
+.tick{
+  flex:none;
+  width:15px;height:15px;
+  margin-top:2px;
+  border-radius:50%;
+  display:grid;place-items:center;
+  background:linear-gradient(135deg,var(--a1),var(--a2));
+  box-shadow:0 0 10px -2px var(--glow-strong);
+}
+.tick svg{width:8px;height:8px;stroke:var(--btn-text);stroke-width:3.2;fill:none;stroke-linecap:round;stroke-linejoin:round;}
+.plan-more{
+  font-size:11.5px;
+  color:var(--muted-2);
+  font-weight:600;
+  padding-left:24px;
+  letter-spacing:.01em;
+}
+
+.plan-actions{
+  position:relative;z-index:3;
+  display:grid;
+  grid-template-columns:1fr 1.15fr;
+  gap:8px;
+  margin-top:auto;
+}
+
+/* ---------- BUTTONS ---------- */
+.btn{
+  appearance:none;
+  border:0;
+  cursor:pointer;
+  font-weight:700;
+  font-size:13.5px;
+  letter-spacing:.01em;
+  border-radius:13px;
+  padding:12px 14px;
+  min-height:46px;
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
+  gap:8px;
+  text-align:center;
+  transition:transform .16s var(--ease), box-shadow .28s ease, background .28s ease, border-color .28s ease, opacity .2s;
+  -webkit-tap-highlight-color:transparent;
+  user-select:none;
+  position:relative;
+  overflow:hidden;
+}
+.btn:active{transform:scale(.972);}
+.btn:focus-visible{outline:2px solid var(--a1);outline-offset:3px;}
+.btn-ghost{
+  background:rgba(255,255,255,.05);
+  border:1px solid rgba(255,255,255,.13);
+  color:var(--txt);
+  font-weight:600;
+}
+.btn-ghost:hover{background:rgba(255,255,255,.1);border-color:rgba(255,255,255,.24);}
+.btn-solid{
+  color:var(--btn-text);
+  background:linear-gradient(125deg,var(--a1),var(--a2));
+  box-shadow:0 14px 34px -14px var(--glow-strong), inset 0 1px 0 rgba(255,255,255,.24);
+}
+.btn-solid:hover{
+  box-shadow:0 18px 44px -14px var(--glow-strong), inset 0 1px 0 rgba(255,255,255,.32);
+}
+.btn-solid::after{
+  content:'';
+  position:absolute;
+  inset:0;
+  background:linear-gradient(105deg,transparent 30%,rgba(255,255,255,.32) 48%,transparent 66%);
+  transform:translateX(-120%);
+  transition:transform .7s ease;
+}
+.btn-solid:hover::after{transform:translateX(120%);}
+
+/* ============================================================
+   FOOTNOTE
+   ============================================================ */
+.foot-note{
+  text-align:center;
+  margin-top:24px;
+  padding:16px 14px;
+  border-radius:var(--r-md);
+  background:rgba(255,255,255,.025);
+  border:1px solid rgba(255,255,255,.06);
+  font-size:11.5px;
+  line-height:1.65;
+  color:var(--muted-2);
+  max-width:680px;
+  margin-left:auto;margin-right:auto;
+}
+.foot-note strong{color:#94a1bd;font-weight:600;}
+.copyright{
+  text-align:center;
+  font-size:10.5px;
+  letter-spacing:.05em;
+  color:#3f4860;
+  padding:22px 0 4px;
+}
+
+/* ============================================================
+   TIKTOK SOCIAL ICON
+   ============================================================ */
+.social-wrap{
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  margin-top:22px;
+  margin-bottom:6px;
+}
+
+/* ---------- Outer wrapper: রাখে ঘোরানো রিং ---------- */
+.tiktok-wrap{
+  position:relative;
+  display:inline-grid;
+  place-items:center;
+  width:64px;
+  height:64px;
+  border-radius:22px;
+  overflow:hidden;
+  isolation:isolate;
+}
+
+/* ঘোরানো কনিক-গ্রেডিয়েন্ট রিং */
+.tiktok-wrap::before{
+  content:'';
+  position:absolute;
+  inset:-40%;
+  z-index:0;
+  background:conic-gradient(
+    from 0deg,
+    #25F4EE,
+    #FE2C55,
+    #a855f7,
+    #25F4EE,
+    #FE2C55,
+    #a855f7,
+    #25F4EE
+  );
+  animation:tiktokSpin 4s linear infinite;
+  border-radius:inherit;
+}
+
+/* ভেতরের ডার্ক স্তর — যাতে রিংটা শুধু বাইরে দেখা যায় */
+.tiktok-wrap::after{
+  content:'';
+  position:absolute;
+  inset:2px;
+  z-index:1;
+  border-radius:20px;
+  background:linear-gradient(145deg,#141826 0%,#0a0e18 100%);
+  box-shadow:inset 0 1px 0 rgba(255,255,255,.08);
+}
+
+/* আইকন বাটন — এখন ভেতরে বসে */
+.tiktok-btn{
+  position:relative;
+  z-index:2;
+  display:grid;
+  place-items:center;
+  width:100%;
+  height:100%;
+  border-radius:20px;
+  text-decoration:none;
+  background:transparent;
+  -webkit-tap-highlight-color:transparent;
+  transition:transform .35s cubic-bezier(.2,.8,.25,1);
+}
+
+.tiktok-btn svg{
+  width:26px;
+  height:26px;
+  fill:#e9edf9;
+  position:relative;
+  z-index:1;
+  transition:fill .35s ease, filter .35s ease, transform .35s ease;
+}
+
+/* Hover (PC) */
+@media (hover:hover){
+  .tiktok-wrap:hover{
+    box-shadow:
+      0 0 22px rgba(254,44,85,.55),
+      0 0 22px rgba(37,244,238,.45);
+  }
+  .tiktok-btn:hover{
+    transform:scale(1.05);
+  }
+  .tiktok-btn:hover svg{
+    fill:#ffffff;
+    filter:
+      drop-shadow(0 0 6px #FE2C55)
+      drop-shadow(0 0 10px #25F4EE);
+  }
+}
+
+.tiktok-btn:active{ transform:scale(.93); }
+
+.tiktok-btn:focus-visible{
+  outline:2px solid #25F4EE;
+  outline-offset:4px;
+}
+
+/* ঘোরানোর keyframe */
+@keyframes tiktokSpin{
+  to{ transform:rotate(360deg); }
+}
+
+@media (prefers-reduced-motion:reduce){
+  .tiktok-wrap::before{ animation:none; }
+}
+
+.tiktok-btn svg{
+  width:26px;
+  height:26px;
+  fill:#e9edf9;
+  position:relative;
+  z-index:1;
+  transition:fill .35s ease, filter .35s ease, transform .35s ease;
+}
+
+@media (hover:hover){
+  .tiktok-btn:hover{
+    transform:translateY(-4px) scale(1.06);
+    border-color:rgba(255,255,255,.28);
+    box-shadow:
+      0 18px 44px -14px rgba(254,44,85,.7),
+      0 18px 44px -14px rgba(37,244,238,.55),
+      inset 0 1px 0 rgba(255,255,255,.2);
+  }
+  .tiktok-btn:hover svg{
+    fill:#ffffff;
+    transform:scale(1.1);
+    filter:
+      drop-shadow(0 0 6px #FE2C55)
+      drop-shadow(0 0 10px #25F4EE);
+  }
+}
+
+.tiktok-btn:active{ transform:scale(.93); }
+
+.tiktok-btn:focus-visible{
+  outline:2px solid #25F4EE;
+  outline-offset:4px;
+}
+
+@keyframes tiktokPulse{
+  0%,100%{
+    box-shadow:
+      0 10px 30px -12px rgba(0,0,0,.95),
+      0 0 0 0 rgba(254,44,85,.55),
+      inset 0 1px 0 rgba(255,255,255,.1);
+  }
+  50%{
+    box-shadow:
+      0 10px 30px -12px rgba(0,0,0,.95),
+      0 0 0 12px rgba(254,44,85,0),
+      0 0 28px -6px rgba(37,244,238,.6),
+      inset 0 1px 0 rgba(255,255,255,.14);
+  }
+}
+
+@media (prefers-reduced-motion:reduce){
+  .tiktok-btn{ animation:none; }
+}
+
+/* ============================================================
+   MODAL / SHEET
+   ============================================================ */
+.overlay{
+  position:fixed;
+  inset:0;
+  z-index:100;
+  display:flex;
+  align-items:flex-end;
+  justify-content:center;
+  background:rgba(3,5,12,.72);
+  backdrop-filter:blur(10px);
+  -webkit-backdrop-filter:blur(10px);
+  opacity:0;
+  pointer-events:none;
+  transition:opacity .3s ease;
+}
+.overlay.open{opacity:1;pointer-events:auto;}
+
+.sheet{
+  position:relative;
+  width:100%;
+  max-width:780px;
+  height:100vh;
+  height:100dvh;
+  display:flex;
+  flex-direction:column;
+  background:linear-gradient(180deg,#0a1020 0%,#070a14 55%,#05070f 100%);
+  border:1px solid rgba(255,255,255,.08);
+  overflow:hidden;
+  transform:translateY(26px) scale(.995);
+  opacity:.6;
+  transition:transform .42s var(--ease), opacity .3s ease, border-radius .3s;
+  box-shadow:0 -20px 70px -20px rgba(0,0,0,.9);
+}
+.overlay.open .sheet{transform:none;opacity:1;}
+
+@media (min-width:800px){
+  .overlay{align-items:center;padding:26px;}
+  .sheet{
+    height:auto;
+    max-height:90vh;
+    border-radius:28px;
+    box-shadow:0 50px 120px -30px rgba(0,0,0,.95), 0 0 0 1px rgba(255,255,255,.04), inset 0 1px 0 rgba(255,255,255,.07);
+  }
+}
+
+.sheet-head{
+  flex:none;
+  position:relative;
+  display:flex;
+  align-items:center;
+  gap:12px;
+  padding:16px 16px 14px;
+  padding-top:calc(16px + env(safe-area-inset-top));
+  border-bottom:1px solid rgba(255,255,255,.06);
+  background:linear-gradient(180deg,rgba(255,255,255,.045),transparent);
+}
+.sheet-head::before{
+  content:'';
+  position:absolute;
+  bottom:-1px;left:0;right:0;height:1px;
+  background:linear-gradient(90deg,transparent,var(--a1),var(--a2),transparent);
+  opacity:.7;
+}
+.head-mark{
+  width:40px;height:40px;flex:none;
+  border-radius:13px;
+  display:grid;place-items:center;
+  background:linear-gradient(140deg,rgba(255,255,255,.1),rgba(255,255,255,.02));
+  border:1px solid rgba(255,255,255,.12);
+  box-shadow:0 0 24px -8px var(--glow-strong), inset 0 1px 0 rgba(255,255,255,.14);
+}
+.head-mark i{
+  width:13px;height:13px;border-radius:4px;
+  background:linear-gradient(135deg,var(--a1),var(--a2));
+  transform:rotate(45deg);
+  box-shadow:0 0 14px var(--glow-strong);
+}
+.head-text{flex:1;min-width:0;}
+.head-title{
+  font-size:13px;font-weight:800;letter-spacing:.09em;
+  text-transform:uppercase;
+  color:#e6ecfa;
+  white-space:nowrap;overflow:hidden;text-overflow:ellipsis;
+}
+.head-price{
+  font-size:12.5px;font-weight:600;
+  color:var(--a1);
+  margin-top:2px;
+  letter-spacing:.01em;
+}
+.close-btn{
+  flex:none;
+  width:40px;height:40px;
+  border-radius:12px;
+  display:grid;place-items:center;
+  background:rgba(255,255,255,.05);
+  border:1px solid rgba(255,255,255,.1);
+  color:#a9b4cd;
+  cursor:pointer;
+  transition:background .2s,color .2s,transform .15s,border-color .2s;
+  -webkit-tap-highlight-color:transparent;
+}
+.close-btn:hover{background:rgba(255,255,255,.12);color:#fff;border-color:rgba(255,255,255,.22);}
+.close-btn:focus-visible{outline:2px solid var(--a1);outline-offset:2px;}
+.close-btn:active{transform:scale(.92);}
+.close-btn svg{width:15px;height:15px;stroke:currentColor;stroke-width:2.2;stroke-linecap:round;fill:none;}
+
+/* progress */
+.progress{
+  flex:none;
+  padding:11px 16px 12px;
+  border-bottom:1px solid rgba(255,255,255,.05);
+  background:rgba(255,255,255,.014);
+}
+.progress-bars{
+  display:flex;
+  gap:5px;
+  margin-bottom:8px;
+}
+.progress-bars i{
+  flex:1;
+  height:3px;
+  border-radius:99px;
+  background:rgba(255,255,255,.09);
+  transition:background .45s ease, box-shadow .45s ease;
+}
+.progress-bars i.on{
+  background:linear-gradient(90deg,var(--a1),var(--a2));
+  box-shadow:0 0 10px -1px var(--glow-strong);
+}
+.progress-label{
+  font-size:10px;
+  font-weight:700;
+  letter-spacing:.11em;
+  text-transform:uppercase;
+  color:var(--muted-2);
+  transition:color .3s;
+}
+.progress-label b{color:var(--a1);font-weight:800;}
+
+/* sheet body */
+.sheet-body{
+  flex:1;
+  overflow-y:auto;
+  overscroll-behavior:contain;
+  -webkit-overflow-scrolling:touch;
+  padding:20px 16px 28px;
+  scroll-behavior:smooth;
+}
+
+.plan-desc-block{
+  padding:16px;
+  border-radius:var(--r-md);
+  background:linear-gradient(150deg,rgba(255,255,255,.06),rgba(255,255,255,.02));
+  border:1px solid rgba(255,255,255,.08);
+  margin-bottom:22px;
+}
+.plan-desc-block p{
+  margin:0;
+  font-size:13.5px;
+  line-height:1.65;
+  color:#b9c4db;
+}
+.plan-desc-block .range{
+  display:flex;flex-wrap:wrap;gap:8px;
+  margin-top:12px;
+}
+.chip{
+  font-size:10.5px;font-weight:700;letter-spacing:.06em;
+  padding:6px 11px;border-radius:99px;
+  background:rgba(255,255,255,.05);
+  border:1px solid rgba(255,255,255,.1);
+  color:#9daac7;
+}
+.chip.accent{
+  background:linear-gradient(120deg,var(--a1),var(--a2));
+  color:var(--btn-text);
+  border-color:transparent;
+  box-shadow:0 6px 18px -8px var(--glow-strong);
+}
+
+.sec{margin-bottom:26px;}
+.sec-head{
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:12px;
+  margin-bottom:13px;
+}
+.sec-head h3{
+  margin:0;
+  font-size:14px;
+  font-weight:800;
+  letter-spacing:.03em;
+  color:#e6ecfa;
+}
+.pill{
+  font-size:9.5px;
+  font-weight:800;
+  letter-spacing:.1em;
+  text-transform:uppercase;
+  padding:5px 10px;
+  border-radius:99px;
+  color:var(--a1);
+  background:rgba(255,255,255,.05);
+  border:1px solid rgba(255,255,255,.1);
+  white-space:nowrap;
+}
+.link-btn{
+  appearance:none;border:0;background:none;
+  cursor:pointer;
+  font-size:11px;
+  font-weight:700;
+  letter-spacing:.05em;
+  color:var(--a1);
+  padding:6px 2px;
+  -webkit-tap-highlight-color:transparent;
+  transition:opacity .2s;
+  border-radius:6px;
+}
+.link-btn:hover{opacity:.72;}
+.link-btn:focus-visible{outline:2px solid var(--a1);outline-offset:2px;}
+.sec-note{
+  margin:-4px 0 13px;
+  font-size:11.5px;
+  line-height:1.55;
+  color:var(--muted-2);
+}
+
+/* service items */
+.svc-list{display:flex;flex-direction:column;gap:9px;}
+
+.svc{
+  border-radius:var(--r-md);
+  background:rgba(255,255,255,.032);
+  border:1px solid rgba(255,255,255,.075);
+  overflow:hidden;
+  transition:border-color .3s ease, background .3s ease;
+}
+.svc.open{
+  border-color:rgba(255,255,255,.16);
+  background:rgba(255,255,255,.052);
+  box-shadow:0 14px 34px -22px rgba(0,0,0,.9);
+}
+.svc-head{
+  width:100%;
+  appearance:none;border:0;background:none;
+  cursor:pointer;
+  display:flex;
+  align-items:center;
+  gap:11px;
+  padding:14px 13px;
+  text-align:left;
+  color:inherit;
+  -webkit-tap-highlight-color:transparent;
+  transition:background .2s;
+}
+.svc-head:hover{background:rgba(255,255,255,.03);}
+.svc-head:focus-visible{outline:2px solid var(--a1);outline-offset:-2px;}
+.svc-idx{
+  flex:none;
+  font-size:10px;
+  font-weight:800;
+  letter-spacing:.04em;
+  color:var(--muted-2);
+  width:20px;
+  padding-top:2px;
+}
+.svc-main{
+  flex:1;
+  min-width:0;
+  display:flex;
+  flex-direction:column;
+  gap:3px;
+}
+.svc-name{
+  font-size:13.5px;
+  font-weight:700;
+  color:#e2e9f8;
+  line-height:1.35;
+  letter-spacing:-.005em;
+}
+.svc-price{
+  font-size:11.5px;
+  font-weight:600;
+  color:var(--a1);
+  letter-spacing:.005em;
+}
+.chev{
+  flex:none;
+  width:22px;height:22px;
+  border-radius:7px;
+  display:grid;place-items:center;
+  background:rgba(255,255,255,.05);
+  border:1px solid rgba(255,255,255,.09);
+  transition:transform .35s var(--ease), background .25s, border-color .25s;
+}
+.chev::after{
+  content:'';
+  width:6px;height:6px;
+  border-right:1.8px solid #93a0bd;
+  border-bottom:1.8px solid #93a0bd;
+  transform:rotate(45deg) translate(-1px,-1px);
+  transition:border-color .25s;
+}
+.svc.open .chev{
+  transform:rotate(180deg);
+  background:linear-gradient(135deg,var(--a1),var(--a2));
+  border-color:transparent;
+}
+.svc.open .chev::after{border-color:var(--btn-text);}
+
+.svc-body{
+  display:grid;
+  grid-template-rows:0fr;
+  transition:grid-template-rows .4s var(--ease);
+}
+.svc.open .svc-body{grid-template-rows:1fr;}
+.svc-inner{overflow:hidden;}
+
+.svc-what{
+  margin:0 0 14px;
+  padding:0 13px;
+  font-size:12.5px;
+  line-height:1.62;
+  color:#9aa6c1;
+}
+
+.meta{
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  gap:8px;
+  margin:0 13px 16px;
+}
+.meta-item{
+  padding:10px 9px;
+  border-radius:11px;
+  background:rgba(255,255,255,.035);
+  border:1px solid rgba(255,255,255,.07);
+  text-align:center;
+}
+.meta-item span{
+  display:block;
+  font-size:9px;
+  font-weight:700;
+  letter-spacing:.1em;
+  text-transform:uppercase;
+  color:var(--muted-2);
+  margin-bottom:4px;
+}
+.meta-item strong{
+  display:block;
+  font-size:11.5px;
+  font-weight:700;
+  color:#d3dcf0;
+  line-height:1.35;
+}
+
+.ie{
+  display:grid;
+  grid-template-columns:1fr;
+  gap:12px;
+  margin:0 13px;
+  padding-bottom:18px;
+}
+.ie-col{
+  padding:13px;
+  border-radius:13px;
+  background:rgba(255,255,255,.028);
+  border:1px solid rgba(255,255,255,.06);
+}
+.ie-col h5{
+  margin:0 0 10px;
+  font-size:10.5px;
+  font-weight:800;
+  letter-spacing:.11em;
+  text-transform:uppercase;
+}
+.ie-col.inc h5{color:#3ddc84;}
+.ie-col.exc h5{color:#8d96ad;}
+.ie-col ul{
+  list-style:none;
+  margin:0;padding:0;
+  display:flex;flex-direction:column;gap:7px;
+}
+.ie-col li{
+  position:relative;
+  padding-left:15px;
+  font-size:12px;
+  line-height:1.5;
+  color:#b4bfd6;
+}
+.ie-col li::before{
+  content:'';
+  position:absolute;
+  left:0;top:6.5px;
+  width:5px;height:5px;
+  border-radius:50%;
+}
+.ie-col.inc li::before{background:#3ddc84;box-shadow:0 0 8px rgba(61,220,132,.8);}
+.ie-col.exc li{color:#7d879e;}
+.ie-col.exc li::before{background:#4a5470;}
+
+@media (min-width:600px){
+  .ie{grid-template-columns:1fr 1fr;}
+}
+
+/* add-ons */
+.addon-list{display:flex;flex-direction:column;gap:9px;}
+.addon{
+  position:relative;
+  display:flex;
+  align-items:center;
+  gap:12px;
+  padding:13px 14px;
+  min-height:56px;
+  border-radius:14px;
+  background:rgba(255,255,255,.032);
+  border:1px solid rgba(255,255,255,.075);
+  cursor:pointer;
+  transition:background .25s ease, border-color .25s ease, transform .14s var(--ease), box-shadow .3s ease;
+  -webkit-tap-highlight-color:transparent;
+}
+.addon:active{transform:scale(.985);}
+.addon:hover{background:rgba(255,255,255,.055);border-color:rgba(255,255,255,.13);}
+.addon.sel{
+  background:linear-gradient(120deg,rgba(255,255,255,.085),rgba(255,255,255,.035));
+  border-color:var(--line-2);
+  box-shadow:0 12px 30px -20px var(--glow-strong), inset 0 0 0 1px rgba(255,255,255,.03);
+}
+.addon input{
+  position:absolute;
+  opacity:0;
+  width:1px;height:1px;
+  pointer-events:none;
+}
+.box{
+  flex:none;
+  width:22px;height:22px;
+  border-radius:7px;
+  display:grid;
+  place-items:center;
+  background:rgba(255,255,255,.04);
+  border:1.5px solid rgba(255,255,255,.2);
+  transition:background .25s ease, border-color .25s ease, box-shadow .3s ease;
+}
+.box::after{
+  content:'';
+  width:10px;height:5.5px;
+  margin-top:-2px;
+  border-left:2.2px solid var(--btn-text);
+  border-bottom:2.2px solid var(--btn-text);
+  transform:rotate(-45deg) scale(0);
+  transition:transform .26s cubic-bezier(.2,.8,.3,1.5);
+}
+.addon input:checked ~ .box{
+  background:linear-gradient(135deg,var(--a1),var(--a2));
+  border-color:transparent;
+  box-shadow:0 0 16px -2px var(--glow-strong);
+}
+.addon input:checked ~ .box::after{transform:rotate(-45deg) scale(1);}
+.addon input:focus-visible ~ .box{
+  outline:2px solid var(--a1);
+  outline-offset:2px;
+}
+.addon-label{
+  flex:1;
+  font-size:13px;
+  font-weight:600;
+  color:#cdd6ea;
+  line-height:1.35;
+}
+.addon.sel .addon-label{color:#eef2fb;}
+.addon-price{
+  flex:none;
+  font-size:12px;
+  font-weight:800;
+  letter-spacing:.01em;
+  color:var(--a1);
+  padding:5px 9px;
+  border-radius:8px;
+  background:rgba(255,255,255,.045);
+  border:1px solid rgba(255,255,255,.07);
+  transition:background .25s, color .25s, border-color .25s;
+}
+.addon.sel .addon-price{
+  background:linear-gradient(120deg,var(--a1),var(--a2));
+  color:var(--btn-text);
+  border-color:transparent;
+}
+
+/* summary */
+.summary{
+  border-radius:var(--r-md);
+  background:linear-gradient(155deg,rgba(255,255,255,.055),rgba(255,255,255,.018));
+  border:1px solid rgba(255,255,255,.09);
+  padding:6px 15px 15px;
+  box-shadow:inset 0 1px 0 rgba(255,255,255,.06);
+}
+.sum-row{
+  display:flex;
+  align-items:flex-start;
+  justify-content:space-between;
+  gap:14px;
+  padding:11px 0;
+  font-size:13px;
+  color:#b2bdd4;
+}
+.sum-row span{line-height:1.45;}
+.sum-row strong{
+  font-weight:700;
+  color:#e5ebf8;
+  white-space:nowrap;
+  font-variant-numeric:tabular-nums;
+}
+.sum-row .sub{
+  display:block;
+  font-size:10.5px;
+  font-weight:600;
+  letter-spacing:.05em;
+  color:var(--muted-2);
+  margin-top:3px;
+  text-transform:uppercase;
+}
+.sum-sub{
+  border-top:1px dashed rgba(255,255,255,.09);
+  border-bottom:1px dashed rgba(255,255,255,.09);
+  padding:3px 0;
+  margin:2px 0;
+}
+.sum-row.addon{
+  font-size:12.5px;
+  color:#9aa6c1;
+  padding:8px 0;
+}
+.sum-row.addon strong{
+  color:var(--a1);
+  font-weight:700;
+}
+.sum-row.addon.empty{opacity:.55;}
+.sum-row.addon.empty strong{color:#6d7793;}
+.sum-row.addon-total{
+  padding-top:10px;
+  font-size:12px;
+  font-weight:700;
+  letter-spacing:.04em;
+  text-transform:uppercase;
+  color:#8d97b0;
+}
+.sum-row.addon-total strong{color:#cdd6ea;}
+.sum-row.grand{
+  border-top:1px solid rgba(255,255,255,.1);
+  margin-top:4px;
+  padding-top:15px;
+  align-items:center;
+}
+.sum-row.grand span{
+  font-size:12.5px;
+  font-weight:800;
+  letter-spacing:.06em;
+  text-transform:uppercase;
+  color:#cfd8ec;
+}
+.sum-row.grand strong{
+  font-size:22px;
+  font-weight:800;
+  letter-spacing:-.025em;
+  background:linear-gradient(115deg,#ffffff 25%,var(--a1) 125%);
+  -webkit-background-clip:text;background-clip:text;
+  -webkit-text-fill-color:transparent;
+}
+.sum-note{
+  margin:11px 0 0;
+  font-size:10.5px;
+  line-height:1.6;
+  color:var(--muted-2);
+  border-top:1px solid rgba(255,255,255,.06);
+  padding-top:11px;
+}
+
+/* form */
+.field{margin-bottom:14px;}
+.field label{
+  display:block;
+  font-size:11px;
+  font-weight:700;
+  letter-spacing:.09em;
+  text-transform:uppercase;
+  color:#939fb9;
+  margin-bottom:7px;
+}
+.field .req{color:var(--a1);}
+.field input,
+.field textarea{
+  width:100%;
+  font-family:inherit;
+  font-size:14px;
+  font-weight:500;
+  color:var(--txt);
+  background:rgba(255,255,255,.04);
+  border:1px solid rgba(255,255,255,.1);
+  border-radius:13px;
+  padding:14px 14px;
+  min-height:52px;
+  outline:none;
+  transition:border-color .25s ease, background .25s ease, box-shadow .25s ease;
+  -webkit-appearance:none;
+}
+.field textarea{
+  min-height:88px;
+  resize:vertical;
+  line-height:1.55;
+  padding-top:13px;
+}
+.field input::placeholder,
+.field textarea::placeholder{color:#4d5670;}
+.field input:focus,
+.field textarea:focus{
+  border-color:var(--a1);
+  background:rgba(255,255,255,.06);
+  box-shadow:0 0 0 3px rgba(255,255,255,.045), 0 0 22px -10px var(--glow-strong);
+}
+.field.error input,
+.field.error textarea{
+  border-color:#e5486a;
+  background:rgba(229,72,106,.07);
+  box-shadow:0 0 0 3px rgba(229,72,106,.1);
+}
+.err{
+  font-size:11px;
+  font-weight:600;
+  color:#e5486a;
+  margin-top:6px;
+  min-height:0;
+  opacity:0;
+  transform:translateY(-3px);
+  transition:opacity .25s ease, transform .25s ease;
+}
+.field.error .err{opacity:1;transform:none;}
+
+/* sheet footer */
+.sheet-foot{
+  flex:none;
+  display:flex;
+  align-items:center;
+  gap:12px;
+  padding:14px 16px;
+  padding-bottom:calc(14px + env(safe-area-inset-bottom));
+  border-top:1px solid rgba(255,255,255,.08);
+  background:linear-gradient(180deg,rgba(8,11,20,.75),rgba(5,7,15,.97));
+  backdrop-filter:blur(22px);
+  -webkit-backdrop-filter:blur(22px);
+  position:relative;
+}
+.sheet-foot::before{
+  content:'';
+  position:absolute;
+  top:-1px;left:0;right:0;height:1px;
+  background:linear-gradient(90deg,transparent,var(--a1),var(--a2),transparent);
+  opacity:.55;
+}
+.foot-price{
+  flex:1;
+  min-width:0;
+}
+.foot-price span{
+  display:block;
+  font-size:9.5px;
+  font-weight:800;
+  letter-spacing:.12em;
+  text-transform:uppercase;
+  color:var(--muted-2);
+  margin-bottom:3px;
+}
+.foot-price strong{
+  display:block;
+  font-size:20px;
+  font-weight:800;
+  letter-spacing:-.025em;
+  color:#fff;
+  font-variant-numeric:tabular-nums;
+  background:linear-gradient(115deg,#ffffff 30%,var(--a1) 130%);
+  -webkit-background-clip:text;background-clip:text;
+  -webkit-text-fill-color:transparent;
+  white-space:nowrap;
+  overflow:hidden;
+  text-overflow:ellipsis;
+}
+#confirmBtn{
+  flex:none;
+  min-width:168px;
+  padding:15px 20px;
+}
+#confirmBtn.loading{
+  pointer-events:none;
+  opacity:.8;
+}
+#confirmBtn .spinner{
+  width:15px;height:15px;
+  border-radius:50%;
+  border:2px solid rgba(0,0,0,.22);
+  border-top-color:currentColor;
+  animation:spin .65s linear infinite;
+  display:none;
+}
+#confirmBtn.loading .spinner{display:block;}
+#confirmBtn.loading .label{display:none;}
+@keyframes spin{to{transform:rotate(360deg);}}
+
+@media (max-width:420px){
+  .sheet-foot{flex-direction:column;align-items:stretch;gap:10px;}
+  .foot-price{display:flex;align-items:baseline;justify-content:space-between;gap:10px;}
+  .foot-price span{margin-bottom:0;}
+  #confirmBtn{width:100%;min-width:0;}
+}
+
+/* ============================================================
+   RESPONSIVE GRID
+   ============================================================ */
+@media (min-width:640px){
+  .wrap{padding:0 22px 48px;}
+  .top{padding:13px 22px;}
+  .plan{padding:20px 20px 18px;}
+  .hero{padding:30px 4px 22px;}
+}
+
+@media (min-width:720px){
+  .plans{grid-template-columns:repeat(2,1fr);gap:16px;}
+}
+
+@media (min-width:1080px){
+  .plans{grid-template-columns:repeat(3,1fr);gap:18px;}
+  .hero{padding:38px 4px 28px;}
+  .plan{padding:22px 22px 20px;}
+  .plan-desc{min-height:54px;}
+}
+
+@media (prefers-reduced-motion:reduce){
+  *,*::before,*::after{
+    animation-duration:.001ms !important;
+    animation-iteration-count:1 !important;
+    transition-duration:.001ms !important;
+    scroll-behavior:auto !important;
+  }
+  .plan .shine{display:none;}
+}
+</style>
+</head>
+<body>
+
+<!-- ================= HEADER ================= -->
+<header class="top">
+  <div class="top-inner">
+    <div class="brand">
+      <div class="logo">
+  <img src="https://i.postimg.cc/vm4JqTZy/file-00000000af6481f591d9518f2fbd5cbe.png" alt="FORHAD STUDIO">
+</div>
+      <div class="brand-text">
+        <div class="brand-name">FORHAD STUDIO</div>
+        <div class="brand-sub">Website Design &amp; Development</div>
+      </div>
+    </div>
+    <div class="top-tag"></div>
+  </div>
+</header>
+
+<main class="wrap">
+
+  <!-- ================= HERO ================= -->
+  <section class="hero" aria-labelledby="heroTitle">
+    <div class="eyebrow"><i aria-hidden="true"></i> WEBSITE DESIGN • DEVELOPMENT • SEO</div>
+    <h1 id="heroTitle">Build a Website That Works for Your Business</h1>
+    <p>FORHAD STUDIO creates fast, responsive and SEO-ready websites — from a simple landing page to a full custom web application. Clear packages, transparent pricing, instant ordering.</p>
+  </section>
+
+  <!-- ================= PLANS ================= -->
+  <section class="plans" id="plans" aria-label="Website design and development packages"></section>
+
+  <!-- ================= FOOTNOTE ================= -->
+  <div class="foot-note">
+    <strong>Note:</strong> All package prices are starting ranges. Final pricing may vary according to project scope,
+    features and customization. Individual service pricing is shown inside each plan's details. Optional add-ons
+    are charged separately from the package. Domain &amp; hosting costs are not included.
+  </div>
+
+ <!-- ================= TIKTOK ================= -->
+<div class="social-wrap">
+  <div class="tiktok-wrap">
+    <a class="tiktok-btn"
+       href="https://www.tiktok.com/@nexrox_?_r=1&_t=ZS-99ivXzCBbrW"
+       target="_blank"
+       rel="noopener noreferrer"
+       aria-label="Follow FORHAD STUDIO on TikTok">
+      <svg viewBox="0 0 24 24" aria-hidden="true">
+        <path d="M16.6 5.82a4.28 4.28 0 0 1-2.33-1.35A4.3 4.3 0 0 1 13.12 1h-3.02v14.02a2.6 2.6 0 1 1-1.86-2.5V9.42a5.66 5.66 0 1 0 4.88 5.6V8.9a7.3 7.3 0 0 0 4.2 1.33V7.2a4.28 4.28 0 0 1-.72-1.38z"/>
+      </svg>
+    </a>
+  </div>
+</div>
+<!-- ================= MODAL ================= -->
+<div class="overlay" id="overlay" role="dialog" aria-modal="true" aria-labelledby="headTitle" aria-hidden="true">
+  <div class="sheet" id="sheet">
+
+    <div class="sheet-head">
+      <div class="head-mark" aria-hidden="true"><i></i></div>
+      <div class="head-text">
+        <div class="head-title" id="headTitle">—</div>
+        <div class="head-price" id="headPrice">—</div>
+      </div>
+      <button class="close-btn" id="closeBtn" type="button" aria-label="Close plan details">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18"/></svg>
+      </button>
+    </div>
+
+    <div class="progress">
+      <div class="progress-bars" id="progressBars" aria-hidden="true">
+        <i class="on"></i><i></i><i></i><i></i><i></i>
+      </div>
+      <div class="progress-label" id="progressLabel"><b>Step 2</b> of 5 · View Details</div>
+    </div>
+
+    <div class="sheet-body" id="sheetBody">
+
+      <div class="plan-desc-block">
+        <p id="mDesc">—</p>
+        <div class="range" id="mChips"></div>
+      </div>
+
+      <section class="sec" aria-labelledby="svcHeading">
+        <div class="sec-head">
+          <h3 id="svcHeading">Included Services</h3>
+          <button class="link-btn" id="toggleAll" type="button">Expand all</button>
+        </div>
+        <div class="svc-list" id="svcList"></div>
+      </section>
+
+      <section class="sec" id="customizeSec" aria-labelledby="custHeading">
+        <div class="sec-head">
+          <h3 id="custHeading">Customize Your Plan</h3>
+          <span class="pill">Optional Add-ons</span>
+        </div>
+        <p class="sec-note">These are paid extras. They are <strong>not</strong> part of the package and will be added to your total.</p>
+        <div class="addon-list" id="addonList"></div>
+      </section>
+
+      <section class="sec" aria-labelledby="sumHeading">
+        <div class="sec-head">
+          <h3 id="sumHeading">Order Summary</h3>
+        </div>
+        <div class="summary" id="summary"></div>
+      </section>
+
+      <section class="sec" id="formSec" style="margin-bottom:8px;" aria-labelledby="formHeading">
+        <div class="sec-head">
+          <h3 id="formHeading">Your Details</h3>
+        </div>
+        <div class="field" id="fieldName">
+          <label for="fName">Your Name <span class="req">*</span></label>
+          <input id="fName" type="text" placeholder="e.g. Rahim Uddin" autocomplete="name" />
+          <div class="err">Please enter your name (at least 2 characters).</div>
+        </div>
+        <div class="field" id="fieldPhone">
+          <label for="fPhone">Phone Number <span class="req">*</span></label>
+          <input id="fPhone" type="tel" inputmode="tel" placeholder="e.g. 01867128301" autocomplete="tel" />
+          <div class="err">Please enter a valid Bangladeshi mobile number.</div>
+        </div>
+        <div class="field" id="fieldNotes" style="margin-bottom:0;">
+          <label for="fNotes">Project Details <span style="color:var(--muted-2);font-weight:600;">(optional)</span></label>
+          <textarea id="fNotes" placeholder="Tell us about your website — type of business, number of pages, features, deadline, or any special requirement…"></textarea>
+          <div class="err"></div>
+        </div>
+      </section>
+
+    </div>
+
+    <div class="sheet-foot">
+      <div class="foot-price">
+        <span>Total Estimated</span>
+        <strong id="footTotal">৳0</strong>
+      </div>
+      <button class="btn btn-solid" id="confirmBtn" type="button">
+        <span class="spinner" aria-hidden="true"></span>
+        <span class="label">Confirm &amp; Order</span>
+      </button>
+    </div>
+
+  </div>
+</div>
+
+<!-- ================= STRUCTURED DATA ================= -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Organization",
+      "@id": "https://yourdomain.com/#organization",
+      "name": "FORHAD STUDIO",
+      "alternateName": "Forhad Studio",
+      "url": "https://yourdomain.com/",
+      "description": "Professional website design and development services in Bangladesh — landing pages, business websites, e-commerce and custom web applications.",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://yourdomain.com/logo.png"
+      },
+      "areaServed": {
+        "@type": "Country",
+        "name": "Bangladesh"
+      }
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://yourdomain.com/#website",
+      "url": "https://yourdomain.com/",
+      "name": "FORHAD STUDIO",
+      "description": "Website design and development pricing and ordering.",
+      "publisher": { "@id": "https://yourdomain.com/#organization" },
+      "inLanguage": "en"
+    },
+    {
+      "@type": "Service",
+      "@id": "https://yourdomain.com/#service",
+      "serviceType": "Website Design & Development",
+      "name": "Website Design & Development",
+      "description": "Responsive website design, business websites, e-commerce development, custom web applications, technical SEO and performance optimization.",
+      "provider": { "@id": "https://yourdomain.com/#organization" },
+      "areaServed": { "@type": "Country", "name": "Bangladesh" },
+      "hasOfferCatalog": {
+        "@type": "OfferCatalog",
+        "name": "Website Packages",
+        "itemListElement": [
+          { "@type": "Offer", "name": "Low / Basic Website Package" },
+          { "@type": "Offer", "name": "Medium / Professional Website Package" },
+          { "@type": "Offer", "name": "High / Premium Website Package" }
+        ]
+      }
+    },
+    {
+      "@type": "BreadcrumbList",
+      "@id": "https://yourdomain.com/#breadcrumb",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://yourdomain.com/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Pricing",
+          "item": "https://yourdomain.com/#plans"
+        }
+      ]
+    }
+  ]
+}
+</script>
+
+<script>
+(function(){
+  "use strict";
+
+  /* ==========================================================
+     ACCENT PALETTE
+     ========================================================== */
+  const ACCENTS = {
+    low:    { a1:'#2ee6c5', a2:'#3ddc84', glow:'rgba(46,230,197,.45)',  btn:'#04140f' },
+    medium: { a1:'#4f8bff', a2:'#8b5cf6', glow:'rgba(99,120,255,.5)',   btn:'#ffffff' },
+    high:   { a1:'#a855f7', a2:'#e040a0', glow:'rgba(196,72,190,.5)',   btn:'#ffffff' }
+  };
+
+  /* ==========================================================
+     PLANS — website-only services
+     ========================================================== */
+  const PLANS = {
+    low: {
+      key: 'low',
+      name: 'LOW / BASIC',
+      short: 'Basic',
+      price: '৳5,000 – ৳8,000',
+      base: 5000,
+      desc: 'Essential website services for a clean, responsive and budget-friendly result.',
+      cardList: [
+        'Responsive Landing Page',
+        'Mobile-Friendly Design',
+        'Contact Form',
+        'WhatsApp / Call Button',
+        'Basic On-Page SEO',
+        'SSL & Deployment Guidance'
+      ],
+      extraCount: 1,
+      chips: ['Budget Friendly', 'Fast Delivery', 'Small Business'],
+      services: [
+        {
+          name: 'Responsive Landing Page',
+          price: '৳3,000 – ৳6,000',
+          what: 'A clean, single-page website that presents your business, offer and contact information in a modern, professional layout.',
+          scope: '1 Page',
+          quality: 'Standard',
+          revisions: '2 Revisions',
+          included: [
+            'Fully responsive (mobile + desktop)',
+            'Modern clean layout',
+            'Contact form / call button',
+            'Basic on-page structure',
+            'Free deployment guidance'
+          ],
+          excluded: [
+            'Domain & hosting cost',
+            'Admin panel',
+            'Database integration',
+            'Multi-page structure'
+          ]
+        },
+        {
+          name: 'Mobile-Friendly Design',
+          price: 'Included in package',
+          what: 'Every page is crafted to look and work perfectly on phones, tablets and desktops.',
+          scope: 'All Pages',
+          quality: 'Standard',
+          revisions: '2 Revisions',
+          included: [
+            'Fluid responsive layout',
+            'Touch-friendly buttons',
+            'Optimized images',
+            'Cross-browser tested'
+          ],
+          excluded: [
+            'Native mobile app',
+            'Progressive Web App (PWA)'
+          ]
+        },
+        {
+          name: 'Contact Form',
+          price: 'Included in package',
+          what: 'A working contact form that delivers enquiries straight to your email inbox.',
+          scope: '1 Form',
+          quality: 'Standard',
+          revisions: '1 Revision',
+          included: [
+            'Name / email / message fields',
+            'Email notification',
+            'Basic spam protection'
+          ],
+          excluded: [
+            'CRM integration',
+            'Multi-step forms',
+            'File uploads'
+          ]
+        },
+        {
+          name: 'WhatsApp / Call Button',
+          price: 'Included in package',
+          what: 'Floating action buttons so visitors can call or message you with a single tap.',
+          scope: 'Site-wide',
+          quality: 'Standard',
+          revisions: '1 Revision',
+          included: [
+            'WhatsApp click-to-chat',
+            'Click-to-call button',
+            'Mobile-optimized'
+          ],
+          excluded: [
+            'Live chat widget',
+            'Auto-reply chatbot'
+          ]
+        },
+        {
+          name: 'Basic On-Page SEO',
+          price: '৳1,500 – ৳3,000',
+          what: 'Foundational on-page SEO so search engines can properly read and index your website.',
+          scope: 'Up to 5 Pages',
+          quality: 'Basic On-Page',
+          revisions: '1 Revision',
+          included: [
+            'Meta title & description',
+            'Heading structure',
+            'XML sitemap',
+            'Google Search Console setup',
+            'Basic keyword placement'
+          ],
+          excluded: [
+            'Backlink building',
+            'Content writing',
+            'Monthly ranking report',
+            'Paid advertising'
+          ]
+        },
+        {
+          name: 'Basic Speed Optimization',
+          price: 'Included in package',
+          what: 'Image compression and light optimizations so your website loads quickly.',
+          scope: 'All Pages',
+          quality: 'Standard',
+          revisions: '1 Revision',
+          included: [
+            'Image compression',
+            'Lazy loading',
+            'Minified assets',
+            'Basic caching guidance'
+          ],
+          excluded: [
+            'CDN setup',
+            'Server-side optimization',
+            'Advanced Core Web Vitals tuning'
+          ]
+        },
+        {
+          name: 'SSL & Deployment Guidance',
+          price: '৳1,000 – ৳2,000',
+          what: 'Setup assistance for your domain, hosting and SSL certificate so your website goes live securely.',
+          scope: '1 Website',
+          quality: 'Standard',
+          revisions: '1 Revision',
+          included: [
+            'Domain connection',
+            'Hosting setup guidance',
+            'SSL configuration',
+            'Go-live checklist'
+          ],
+          excluded: [
+            'Domain & hosting cost',
+            'Server administration',
+            'Ongoing maintenance'
+          ]
+        }
+      ]
+    },
+
+    medium: {
+      key: 'medium',
+      name: 'MEDIUM / PROFESSIONAL',
+      short: 'Professional',
+      price: '৳12,000 – ৳20,000',
+      base: 12000,
+      desc: 'More pages, better quality and professional customization for growing businesses.',
+      popular: true,
+      cardList: [
+        'Multi-Page Business Website',
+        'Custom UI / UX Design',
+        'Google Maps + WhatsApp Integration',
+        'Basic CMS / Admin Panel',
+        'SEO Setup + Google Analytics',
+        'Firebase / Database Integration'
+      ],
+      extraCount: 2,
+      chips: ['Most Popular', 'Professional Quality', 'Business Ready'],
+      services: [
+        {
+          name: 'Multi-Page Business Website',
+          price: '৳7,000 – ৳12,000',
+          what: 'A complete multi-page business website with a professional layout, built to represent your brand properly.',
+          scope: '5–8 Pages',
+          quality: 'Professional',
+          revisions: '3 Revisions',
+          included: [
+            '5–8 fully responsive pages',
+            'Professional UI layout',
+            'Contact form + Google Map',
+            'Basic on-page SEO',
+            'Deployment included'
+          ],
+          excluded: [
+            'Payment gateway',
+            'Custom web app features',
+            'Multi-language support'
+          ]
+        },
+        {
+          name: 'Custom UI / UX Design',
+          price: 'Included in package',
+          what: 'Tailored interface and user experience design that reflects your brand and guides visitors to take action.',
+          scope: 'All Pages',
+          quality: 'Professional',
+          revisions: '3 Revisions',
+          included: [
+            'Custom colour & type system',
+            'Consistent design language',
+            'Interactive states',
+            'Mobile-first layouts'
+          ],
+          excluded: [
+            'Full brand guideline book',
+            'Motion design system',
+            'Illustration library'
+          ]
+        },
+        {
+          name: 'Contact Forms + WhatsApp Integration',
+          price: 'Included in package',
+          what: 'Multiple contact points including forms, click-to-call and WhatsApp so customers can reach you instantly.',
+          scope: 'Multiple Forms',
+          quality: 'Professional',
+          revisions: '2 Revisions',
+          included: [
+            'Advanced contact forms',
+            'Email notifications',
+            'WhatsApp click-to-chat',
+            'Click-to-call button',
+            'Spam protection'
+          ],
+          excluded: [
+            'CRM integration',
+            'Auto-reply chatbot',
+            'Live chat widget'
+          ]
+        },
+        {
+          name: 'Google Maps Integration',
+          price: 'Included in package',
+          what: 'Embedded map showing your business location directly on the contact page.',
+          scope: '1 Location',
+          quality: 'Professional',
+          revisions: '1 Revision',
+          included: [
+            'Google Maps embed',
+            'Location marker',
+            'Directions link'
+          ],
+          excluded: [
+            'Multi-location maps',
+            'Custom map styling',
+            'Store locator'
+          ]
+        },
+        {
+          name: 'Basic CMS / Admin Panel',
+          price: 'Included in package',
+          what: 'A simple admin dashboard to update your website content without touching code.',
+          scope: 'Core Content',
+          quality: 'Professional',
+          revisions: '2 Revisions',
+          included: [
+            'Admin login',
+            'Edit pages / posts',
+            'Media manager',
+            'Firebase authentication'
+          ],
+          excluded: [
+            'Multi-role permissions',
+            'Activity logging',
+            'Custom workflows'
+          ]
+        },
+        {
+          name: 'SEO Setup + Google Analytics',
+          price: '৳1,500 – ৳3,000',
+          what: 'Complete on-page SEO plus Google tools so your website is measurable and ready for indexing.',
+          scope: 'Up to 10 Pages',
+          quality: 'Professional',
+          revisions: '2 Revisions',
+          included: [
+            'Full on-page SEO',
+            'Google Analytics setup',
+            'Google Search Console',
+            'Sitemap + robots.txt',
+            'Basic speed optimization'
+          ],
+          excluded: [
+            'Backlink building',
+            'Monthly SEO retainer',
+            'Content writing'
+          ]
+        },
+        {
+          name: 'Performance Optimization',
+          price: 'Included in package',
+          what: 'Faster load times through image, code and asset optimization.',
+          scope: 'All Pages',
+          quality: 'Professional',
+          revisions: '2 Revisions',
+          included: [
+            'Image optimization',
+            'Code minification',
+            'Lazy loading',
+            'Caching setup guidance'
+          ],
+          excluded: [
+            'CDN setup',
+            'Server administration',
+            'Advanced Core Web Vitals tuning'
+          ]
+        },
+        {
+          name: 'Firebase / Database Integration',
+          price: 'Included in package',
+          what: 'Cloud database setup and integration so your website can store and serve dynamic data.',
+          scope: 'Firestore / Realtime DB',
+          quality: 'Professional',
+          revisions: '1 Revision',
+          included: [
+            'Database structure setup',
+            'Read / write integration',
+            'Basic security rules',
+            'Data backup guidance'
+          ],
+          excluded: [
+            'Large-scale data migration',
+            'Custom backend server',
+            'Advanced analytics pipeline'
+          ]
+        }
+      ]
+    },
+
+    high: {
+      key: 'high',
+      name: 'HIGH / PREMIUM',
+      short: 'Premium',
+      price: '৳20,000 – ৳50,000+',
+      base: 20000,
+      desc: 'Advanced website and web-application solutions with maximum customization.',
+      cardList: [
+        'Everything in MEDIUM',
+        'Custom Website / Web Application',
+        'User Authentication + Admin Dashboard',
+        'Advanced E-Commerce',
+        'API + Database + Security',
+        'Advanced SEO & Schema Markup'
+      ],
+      extraCount: 3,
+      chips: ['Maximum Customization', 'Premium Quality', 'Scale Ready'],
+      services: [
+        {
+          name: 'Custom Website Development',
+          price: '৳20,000 – ৳40,000',
+          what: 'A fully custom-designed website built around your exact brand and functionality requirements.',
+          scope: 'Custom Page Count',
+          quality: 'Premium',
+          revisions: '4 Revisions',
+          included: [
+            'Fully custom UI / UX design',
+            'Custom animations & interactions',
+            'Performance optimized',
+            'Deployment + domain setup',
+            'Admin panel'
+          ],
+          excluded: [
+            'Ongoing content updates',
+            'Third-party paid plugins',
+            'Native mobile app'
+          ]
+        },
+        {
+          name: 'Advanced Web Application',
+          price: '৳25,000 – ৳50,000',
+          what: 'A bespoke web application with custom logic, database architecture and integrations.',
+          scope: 'Custom Scope',
+          quality: 'Premium',
+          revisions: '4 Revisions',
+          included: [
+            'Custom functionality',
+            'Full database architecture',
+            'API integration',
+            'User + admin permissions',
+            'Security configuration'
+          ],
+          excluded: [
+            'Native mobile app (iOS / Android)',
+            'Hardware / IoT integration',
+            'Offline-first architecture'
+          ]
+        },
+        {
+          name: 'User Authentication System',
+          price: 'Included in package',
+          what: 'Secure login, registration and password recovery for your website users.',
+          scope: 'Full Auth System',
+          quality: 'Premium',
+          revisions: '3 Revisions',
+          included: [
+            'Sign up / login',
+            'Password reset',
+            'Email verification',
+            'Session management',
+            'Secure password hashing'
+          ],
+          excluded: [
+            'SSO / social login (OAuth)',
+            'Two-factor authentication',
+            'Biometric login'
+          ]
+        },
+        {
+          name: 'Admin Dashboard',
+          price: 'Included in package',
+          what: 'A powerful admin panel to manage all website content, users and data.',
+          scope: 'Full Admin Panel',
+          quality: 'Premium',
+          revisions: '3 Revisions',
+          included: [
+            'Multi-role permissions',
+            'Content management',
+            'User management',
+            'Analytics overview',
+            'Activity logs'
+          ],
+          excluded: [
+            'Enterprise SSO',
+            'Custom report builder',
+            'Automated workflows'
+          ]
+        },
+        {
+          name: 'Advanced E-Commerce',
+          price: '৳20,000 – ৳30,000',
+          what: 'A full-featured online store with payment gateway, order tracking and analytics.',
+          scope: 'Unlimited Products',
+          quality: 'Premium',
+          revisions: '4 Revisions',
+          included: [
+            'Unlimited products & categories',
+            'Online payment gateway',
+            'Courier API integration',
+            'Order tracking system',
+            'Coupon & discount system',
+            'Admin analytics dashboard'
+          ],
+          excluded: [
+            'Multi-vendor marketplace',
+            'Custom ERP system',
+            'Native mobile app'
+          ]
+        },
+        {
+          name: 'Database Integration',
+          price: 'Included in package',
+          what: 'A properly structured, indexed and secured database designed to scale with your product.',
+          scope: 'Full Design',
+          quality: 'Premium',
+          revisions: '2 Revisions',
+          included: [
+            'Full database design',
+            'Relations & indexing',
+            'Security rules',
+            'Backup strategy'
+          ],
+          excluded: [
+            'Data migration from legacy systems',
+            'Dedicated database server setup',
+            'Data warehousing'
+          ]
+        },
+        {
+          name: 'API Integration',
+          price: '৳2,000 / integration',
+          what: 'Connection to third-party services such as payments, SMS, couriers or external data.',
+          scope: 'Per Integration',
+          quality: 'Premium',
+          revisions: '2 Revisions',
+          included: [
+            'Third-party API connection',
+            'Payment / SMS / courier API',
+            'Error handling',
+            'Full testing'
+          ],
+          excluded: [
+            'Custom API development from scratch',
+            'Third-party service fees',
+            'Legacy protocol support'
+          ]
+        },
+        {
+          name: 'Advanced SEO + Schema Markup',
+          price: 'Included in package',
+          what: 'Technical SEO, structured data and Core Web Vitals optimization for maximum search visibility.',
+          scope: 'Full Website',
+          quality: 'Premium',
+          revisions: '2 Revisions',
+          included: [
+            'Technical SEO audit',
+            'Schema markup (JSON-LD)',
+            'Core Web Vitals optimization',
+            'Keyword strategy',
+            'Analytics dashboard'
+          ],
+          excluded: [
+            'Guaranteed #1 ranking',
+            'Paid advertising',
+            'Monthly content writing'
+          ]
+        },
+        {
+          name: 'Security Configuration',
+          price: 'Included in package',
+          what: 'Hardening your application against common vulnerabilities with proper access controls.',
+          scope: 'Full Application',
+          quality: 'Premium',
+          revisions: '2 Revisions',
+          included: [
+            'SSL setup',
+            'Authentication hardening',
+            'Database security rules',
+            'Input validation',
+            'Basic rate limiting'
+          ],
+          excluded: [
+            'Enterprise penetration testing',
+            '24/7 security monitoring',
+            'DDoS protection plan'
+          ]
+        }
+      ]
+    }
+  };
+
+  /* ==========================================================
+     ADD-ONS — website-only
+     ========================================================== */
+  const ADDONS = [
+    { id:'page',      label:'Extra Website Page',          price:500  },
+    { id:'Update',      label:'Monthly Update',          price:3000  },
+    { id:'rev',       label:'Extra Revision',              price:200  },
+    { id:'seo',       label:'Advanced SEO Setup',          price:1500 },
+    { id:'admin',     label:'Admin Panel',                 price:2000 },
+    { id:'login',     label:'User Login System',           price:1500 },
+    { id:'db',        label:'Database Integration',        price:1500 },
+    { id:'api',       label:'API Integration',             price:2000 },
+    { id:'payment',   label:'Payment Gateway Integration', price:2500 },
+    { id:'speed',     label:'Speed Optimization',          price:1000 },
+    { id:'analytics', label:'Analytics Integration',       price:800  }
+  ];
+
+  const STEPS = [
+    'Choose Plan',
+    'View Details',
+    'Customize',
+    'Review Price',
+    'Confirm Order'
+  ];
+
+  const WA_NUMBER = '8801867128301';
+
+  /* ==========================================================
+     DOM REFS
+     ========================================================== */
+  const $ = id => document.getElementById(id);
+
+  const plansEl       = $('plans');
+  const overlay       = $('overlay');
+  const sheet         = $('sheet');
+  const sheetBody     = $('sheetBody');
+  const closeBtn      = $('closeBtn');
+  const headTitle     = $('headTitle');
+  const headPrice     = $('headPrice');
+  const mDesc         = $('mDesc');
+  const mChips        = $('mChips');
+  const svcList       = $('svcList');
+  const addonList     = $('addonList');
+  const summaryEl     = $('summary');
+  const footTotal     = $('footTotal');
+  const confirmBtn    = $('confirmBtn');
+  const toggleAllBtn  = $('toggleAll');
+  const progressBars  = $('progressBars');
+  const progressLabel = $('progressLabel');
+
+  const fName      = $('fName');
+  const fPhone     = $('fPhone');
+  const fNotes     = $('fNotes');
+  const fieldName  = $('fieldName');
+  const fieldPhone = $('fieldPhone');
+
+  /* ==========================================================
+     STATE
+     ========================================================== */
+  let currentPlan = null;
+  let currentStep = 2;
+  let allExpanded = false;
+  let lastFocused = null;
+
+  /* ==========================================================
+     HELPERS
+     ========================================================== */
+  const money = n => '৳' + Number(n).toLocaleString('en-US');
+  const tickSVG = '<span class="tick" aria-hidden="true"><svg viewBox="0 0 12 12"><path d="M2 6.4L4.6 9 10 3.2"/></svg></span>';
+
+  /* ==========================================================
+     RENDER PLAN CARDS
+     ========================================================== */
+  function renderCards(){
+    plansEl.innerHTML = Object.values(PLANS).map(p => `
+      <article class="plan" data-accent="${p.key}">
+        <span class="shine" aria-hidden="true"></span>
+        <div class="plan-top">
+          <h2 class="plan-name"><i aria-hidden="true"></i>${p.name}</h2>
+          ${p.popular ? '<span class="badge">Most Popular</span>' : ''}
+        </div>
+
+        <div class="plan-price">${p.price}</div>
+        <p class="plan-desc">${p.desc}</p>
+
+        <ul class="plan-list">
+          ${p.cardList.map(item => `<li>${tickSVG}<span>${item}</span></li>`).join('')}
+          ${p.extraCount ? `<li class="plan-more">+ ${p.extraCount} more included services</li>` : ''}
+        </ul>
+
+        <div class="plan-actions">
+          <button class="btn btn-ghost" type="button" data-action="details" data-plan="${p.key}">View Details</button>
+          <button class="btn btn-solid" type="button" data-action="order" data-plan="${p.key}">Order Now</button>
+        </div>
+      </article>
+    `).join('');
+
+    plansEl.querySelectorAll('[data-action]').forEach(btn => {
+      btn.addEventListener('click', () => {
+        const key = btn.dataset.plan;
+        const target = btn.dataset.action === 'order' ? 'customizeSec' : null;
+        openPlan(key, target);
+      });
+    });
+  }
+
+  /* ==========================================================
+     RENDER SERVICE LIST
+     ========================================================== */
+  function renderServices(plan){
+    svcList.innerHTML = plan.services.map((s, i) => `
+      <div class="svc" data-index="${i}">
+        <button class="svc-head" type="button" aria-expanded="false">
+          <span class="svc-idx" aria-hidden="true">${String(i + 1).padStart(2, '0')}</span>
+          <span class="svc-main">
+            <span class="svc-name">${s.name}</span>
+            <span class="svc-price">${s.price}</span>
+          </span>
+          <span class="chev" aria-hidden="true"></span>
+        </button>
+        <div class="svc-body">
+          <div class="svc-inner">
+            <p class="svc-what">${s.what}</p>
+
+            <div class="meta">
+              <div class="meta-item"><span>Scope</span><strong>${s.scope}</strong></div>
+              <div class="meta-item"><span>Quality</span><strong>${s.quality}</strong></div>
+              <div class="meta-item"><span>Revisions</span><strong>${s.revisions}</strong></div>
+            </div>
+
+            <div class="ie">
+              <div class="ie-col inc">
+                <h5>✓ Included</h5>
+                <ul>${s.included.map(x => `<li>${x}</li>`).join('')}</ul>
+              </div>
+              <div class="ie-col exc">
+                <h5>✕ Not Included</h5>
+                <ul>${s.excluded.map(x => `<li>${x}</li>`).join('')}</ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    `).join('');
+
+    svcList.querySelectorAll('.svc-head').forEach(btn => {
+      btn.addEventListener('click', () => {
+        const svc = btn.closest('.svc');
+        const isOpen = svc.classList.toggle('open');
+        btn.setAttribute('aria-expanded', String(isOpen));
+        syncToggleAllLabel();
+      });
+    });
+
+    allExpanded = false;
+    toggleAllBtn.textContent = 'Expand all';
+  }
+
+  function syncToggleAllLabel(){
+    const all = svcList.querySelectorAll('.svc');
+    const openCount = svcList.querySelectorAll('.svc.open').length;
+    allExpanded = all.length > 0 && openCount === all.length;
+    toggleAllBtn.textContent = allExpanded ? 'Collapse all' : 'Expand all';
+  }
+
+  toggleAllBtn.addEventListener('click', () => {
+    const items = svcList.querySelectorAll('.svc');
+    const shouldOpen = !allExpanded;
+    items.forEach(el => {
+      el.classList.toggle('open', shouldOpen);
+      const head = el.querySelector('.svc-head');
+      if (head) head.setAttribute('aria-expanded', String(shouldOpen));
+    });
+    allExpanded = shouldOpen;
+    toggleAllBtn.textContent = shouldOpen ? 'Collapse all' : 'Expand all';
+  });
+
+  /* ==========================================================
+     RENDER ADD-ONS
+     ========================================================== */
+  function renderAddons(){
+    addonList.innerHTML = ADDONS.map(a => `
+      <label class="addon" data-id="${a.id}">
+        <input type="checkbox" data-label="${a.label}" data-price="${a.price}" />
+        <span class="box" aria-hidden="true"></span>
+        <span class="addon-label">${a.label}</span>
+        <span class="addon-price">+${money(a.price)}</span>
+      </label>
+    `).join('');
+
+    addonList.querySelectorAll('input[type="checkbox"]').forEach(cb => {
+      cb.addEventListener('change', () => {
+        cb.closest('.addon').classList.toggle('sel', cb.checked);
+        if (cb.checked) setStep(3);
+        updateTotal();
+      });
+    });
+  }
+
+  /* ==========================================================
+     PRICE CALCULATION
+     ========================================================== */
+  function getSelection(){
+    const selected = [];
+    addonList.querySelectorAll('input[type="checkbox"]:checked').forEach(cb => {
+      selected.push({ label: cb.dataset.label, price: Number(cb.dataset.price) });
+    });
+    const addTotal = selected.reduce((sum, s) => sum + s.price, 0);
+    return { selected, addTotal };
+  }
+
+  function updateTotal(){
+    if (!currentPlan) return;
+    const base = currentPlan.base;
+    const { selected, addTotal } = getSelection();
+    const total = base + addTotal;
+
+    let html = `
+      <div class="sum-row">
+        <span>Base Price<span class="sub">${currentPlan.name}</span></span>
+        <strong>${money(base)}</strong>
+      </div>`;
+
+    if (selected.length){
+      html += `<div class="sum-sub">`;
+      selected.forEach(s => {
+        html += `<div class="sum-row addon"><span>✓ ${s.label}</span><strong>+${money(s.price)}</strong></div>`;
+      });
+      html += `<div class="sum-row addon-total"><span>Add-on Total</span><strong>+${money(addTotal)}</strong></div>`;
+      html += `</div>`;
+    } else {
+      html += `<div class="sum-sub"><div class="sum-row addon empty"><span>No add-ons selected</span><strong>+৳0</strong></div></div>`;
+    }
+
+    html += `
+      <div class="sum-row grand">
+        <span>Total Estimated Price</span>
+        <strong>${money(total)}</strong>
+      </div>
+      <p class="sum-note">
+        Package range for this plan: <strong>${currentPlan.price}</strong>. Individual service pricing is
+        shown above each service. Final price may vary according to scope and customization.
+      </p>`;
+
+    summaryEl.innerHTML = html;
+    footTotal.textContent = money(total);
+  }
+
+  /* ==========================================================
+     PROGRESS
+     ========================================================== */
+  function paintProgress(step){
+    const bars = progressBars.querySelectorAll('i');
+    bars.forEach((b, i) => b.classList.toggle('on', i < step));
+    progressLabel.innerHTML = `<b>Step ${step}</b> of 5 · ${STEPS[step - 1]}`;
+  }
+
+  function setStep(step){
+    if (step <= currentStep) return;
+    currentStep = step;
+    paintProgress(step);
+  }
+
+  function forceStep(step){
+    currentStep = step;
+    paintProgress(step);
+  }
+
+  /* ==========================================================
+     OPEN / CLOSE MODAL
+     ========================================================== */
+  function openPlan(key, scrollTarget){
+    const plan = PLANS[key];
+    if (!plan) return;
+
+    currentPlan = plan;
+
+    const acc = ACCENTS[plan.key];
+    sheet.style.setProperty('--a1', acc.a1);
+    sheet.style.setProperty('--a2', acc.a2);
+    sheet.style.setProperty('--glow-strong', acc.glow);
+    sheet.style.setProperty('--glow', acc.glow);
+    sheet.style.setProperty('--btn-text', acc.btn);
+
+    headTitle.textContent = plan.name;
+    headPrice.textContent = plan.price;
+
+    mDesc.textContent = plan.desc;
+    mChips.innerHTML =
+      `<span class="chip accent">${plan.price}</span>` +
+      plan.chips.map(c => `<span class="chip">${c}</span>`).join('') +
+      `<span class="chip">${plan.services.length} Services</span>`;
+
+    renderServices(plan);
+    renderAddons();
+    updateTotal();
+    forceStep(2);
+
+    fieldName.classList.remove('error');
+    fieldPhone.classList.remove('error');
+
+    lastFocused = document.activeElement;
+    overlay.classList.add('open');
+    overlay.setAttribute('aria-hidden', 'false');
+    document.body.style.overflow = 'hidden';
+    sheetBody.scrollTop = 0;
+
+    if (scrollTarget){
+      requestAnimationFrame(() => {
+        setTimeout(() => {
+          const el = document.getElementById(scrollTarget);
+          if (el) el.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        }, 320);
+      });
+    } else {
+      setTimeout(() => { closeBtn.focus({ preventScroll: true }); }, 340);
+    }
+  }
+
+  function closeModal(){
+    overlay.classList.remove('open');
+    overlay.setAttribute('aria-hidden', 'true');
+    document.body.style.overflow = '';
+    if (lastFocused && typeof lastFocused.focus === 'function'){
+      setTimeout(() => lastFocused.focus({ preventScroll: true }), 60);
+    }
+  }
+
+  closeBtn.addEventListener('click', closeModal);
+  overlay.addEventListener('click', e => { if (e.target === overlay) closeModal(); });
+  document.addEventListener('keydown', e => {
+    if (e.key === 'Escape' && overlay.classList.contains('open')) closeModal();
+  });
+
+  /* ==========================================================
+     FORM VALIDATION
+     ========================================================== */
+  function cleanPhone(v){
+    return (v || '').replace(/[\s\-()]/g, '');
+  }
+
+  function validateForm(){
+    let ok = true;
+
+    const name = fName.value.trim();
+    if (name.length < 2){
+      fieldName.classList.add('error');
+      ok = false;
+    } else {
+      fieldName.classList.remove('error');
+    }
+
+    const phone = cleanPhone(fPhone.value);
+    const phoneRe = /^(?:\+?880|0)1[3-9]\d{8}$/;
+    if (!phoneRe.test(phone)){
+      fieldPhone.classList.add('error');
+      ok = false;
+    } else {
+      fieldPhone.classList.remove('error');
+    }
+
+    if (!ok){
+      const firstError = sheetBody.querySelector('.field.error');
+      if (firstError) firstError.scrollIntoView({ behavior: 'smooth', block: 'center' });
+    }
+    return ok;
+  }
+
+  fName.addEventListener('input', () => {
+    if (fName.value.trim().length >= 2) fieldName.classList.remove('error');
+    if (fName.value.trim()) setStep(4);
+  });
+  fPhone.addEventListener('input', () => {
+    const v = cleanPhone(fPhone.value);
+    if (/^(?:\+?880|0)1[3-9]\d{8}$/.test(v)) fieldPhone.classList.remove('error');
+  });
+
+  /* ==========================================================
+     WHATSAPP MESSAGE + ORDER
+     ========================================================== */
+  function buildMessage(){
+    const base = currentPlan.base;
+    const { selected, addTotal } = getSelection();
+    const total = base + addTotal;
+
+    const lines = [];
+    lines.push('Hello FORHAD STUDIO, I want to order a website service.');
+    lines.push('');
+    lines.push('*Plan:* ' + currentPlan.name);
+    lines.push('*Package Range:* ' + currentPlan.price);
+    lines.push('*Base Price:* ' + money(base));
+    lines.push('');
+
+    if (selected.length){
+      lines.push('*Selected Add-ons:*');
+      selected.forEach(s => lines.push('✓ ' + s.label + ' — ' + money(s.price)));
+      lines.push('');
+      lines.push('*Add-on Total:* ' + money(addTotal));
+    } else {
+      lines.push('*Selected Add-ons:* None');
+      lines.push('');
+      lines.push('*Add-on Total:* ৳0');
+    }
+
+    lines.push('');
+    lines.push('*Total Estimated Price:* ' + money(total));
+    lines.push('');
+    lines.push('-------------------------');
+    lines.push('*Customer Name:* ' + fName.value.trim());
+    lines.push('*Phone:* ' + fPhone.value.trim());
+
+    const notes = fNotes.value.trim();
+    if (notes) lines.push('*Project Details:* ' + notes);
+
+    lines.push('-------------------------');
+    lines.push('');
+    lines.push('Please contact me regarding this order.');
+
+    return lines.join('\n');
+  }
+
+  function confirmOrder(){
+    if (!currentPlan) return;
+    if (!validateForm()) return;
+
+    forceStep(5);
+    confirmBtn.classList.add('loading');
+
+    const message = buildMessage();
+    const url = 'https://wa.me/' + WA_NUMBER + '?text=' + encodeURIComponent(message);
+
+    setTimeout(() => {
+      const win = window.open(url, '_blank', 'noopener,noreferrer');
+      if (!win) window.location.href = url;
+      setTimeout(() => confirmBtn.classList.remove('loading'), 900);
+    }, 420);
+  }
+
+  confirmBtn.addEventListener('click', confirmOrder);
+
+  /* ==========================================================
+     INIT
+     ========================================================== */
+  renderCards();
+
+  window.addEventListener('pageshow', () => {
+    if (!overlay.classList.contains('open')) document.body.style.overflow = '';
+  });
+
+})();
+</script>
+</body>
+</html>
